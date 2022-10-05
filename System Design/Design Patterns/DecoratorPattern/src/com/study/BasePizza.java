@@ -1,4 +1,5 @@
 package com.study;
 
-public class BasePizza {
+public abstract class BasePizza {
+    public abstract int price();
 }
