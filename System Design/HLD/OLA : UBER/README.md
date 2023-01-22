@@ -80,6 +80,9 @@ System contacts drivers in real time when customer puts in a ride request
 
 from educative
 
+quad tree approach and more about quad trees
+https://www.educative.io/answers/what-is-a-quadtree-how-is-it-used-in-location-based-services
+
 
 ![image](https://user-images.githubusercontent.com/41165330/213906049-451ed9cb-f31c-45df-a091-8e82a130eb81.png)
 
