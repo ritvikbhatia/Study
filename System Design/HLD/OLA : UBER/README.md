@@ -3,7 +3,9 @@ OLA / UBER HLD
 other links
 
 https://www.codekarle.com/system-design/Uber-system-design.html
+
 https://www.educative.io/blog/uber-backend-system-design
+
 https://www.geeksforgeeks.org/system-design-of-uber-app-uber-system-architecture/
 
 It has 2 parts : customer side and driver side 
