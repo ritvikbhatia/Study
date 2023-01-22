@@ -36,8 +36,34 @@ throughput: 6940*50
 ![ola uber try 1 drawio](https://user-images.githubusercontent.com/41165330/213901895-ba42fc0a-3ed2-48ed-84d6-387e1b5ebdbf.png)
 
 
+first try 
 
 
- 
+------------------------------------------------------------------------------------------------------------------------------------  
+#insights After seeing solutions:
+
+should focus more on how matching algo works.
+
+There are two kinds of users that our system should account for: Drivers and Customers.
 
 
+Functional requirements:
+1. Drivers must be able to frequently notify the service regarding their current location and availability
+2. Passengers should be able to see all nearby drivers in real-time
+3. Customers can request a ride using a destination and pickup time.
+4. Nearby drivers should be notified when a customer needs to be picked up.
+5. Once a ride is accepted, both the driver and customer must see the other’s current location for the entire duration of the trip.
+6. Once the drive is complete, the driver completes the ride and should then be available for another customer.
+
+NFR missed :
+1.Reduce extra driving.
+2.Minimum waiting time
+3.Minimum overall ETA
+
+We’ll design our build with the following constraints and estimations:
+
+300 million customers and one million drivers in the system
+One million active customers and 500 thousand active drivers per day
+One million rides per day
+All active drivers notify their current location every three seconds
+System contacts drivers in real time when customer puts in a ride request
