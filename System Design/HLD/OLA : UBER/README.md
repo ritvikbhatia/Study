@@ -67,3 +67,6 @@ One million active customers and 500 thousand active drivers per day
 One million rides per day
 All active drivers notify their current location every three seconds
 System contacts drivers in real time when customer puts in a ride request
+
+![image](https://user-images.githubusercontent.com/41165330/213904841-45bc666e-f84f-4c48-85f2-5a91acdf17a6.png)
+from educative
