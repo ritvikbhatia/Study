@@ -9,5 +9,10 @@ public class Main {
         System.out.println("non singleton class 1 hashcode : "+nonSingletonClass.hashCode());
         NonSingletonClass nonSingletonClass1=new NonSingletonClass();
         System.out.println("non singleton class 2 hashcode : "+nonSingletonClass1.hashCode());
+        Intanciator intanciator=new Intanciator();
+        Thread thread=new Thread(intanciator);
+        Thread thread1=new Thread(intanciator);
+        thread.start();
+        thread1.start();
     }
 }
