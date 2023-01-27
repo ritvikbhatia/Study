@@ -1,10 +1,55 @@
-HLD (High Level Design)
+Asked in capillary round 2
 
-Important Links
+# API Design
 
-Top 14 System Design interview questions for software engineers
+Post Coupons/
+{
+	config_id
+}
 
-https://www.educative.io/blog/top-10-system-design-interview-questions#proximity
+POST configs
+{
+Coupon config - >  max no of coupons, discount percent/ abs,  max no of coupon per user, max no. of redemptions
+}
+Coupons
 
-Everything about system design
-https://github.com/karanpratapsingh/system-design
+PUT coupons/{coupon_id}
+{
+}
+
+GET coupons?discount: List of coupons
+
+GET coupons/{coupon_id} : Coupon 
+
+POST coupons/assign
+{
+Coupon_id
+user_id
+}
+
+POST coupons/bulk_assign
+{
+coupon_id
+users[]
+}
+
+POST coupons/apply
+{
+coupon_id
+transaction_id
+}
+
+SQL
+{
+	coupon and user mapping
+}
+
+NO SQL
+{
+	Configs
+}
+
+# HLD 
+![image](https://user-images.githubusercontent.com/41165330/214526778-ddeee3de-60e8-43d4-8332-81f012849236.png)
+
+}

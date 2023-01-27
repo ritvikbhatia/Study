@@ -46,6 +46,107 @@ throughput: 6940*50
 
 first try 
 
+# in interview of physics wallah
+//Design OLA
+
+
+Functional Requirements 
+
+Customer 
+A customer enter location and destination ,-> available rides 
+Customer suitable ride and make a booking 
+Customer can track the ride
+
+Partner 
+Partner can accept bookings
+Partner can see customers location at all times 
+
+Payment flow 
+
+Non Functional Requirements
+Should be highly available 
+Global 
+Fault tolerant 
+Low latency 
+Consistent 
+
+Capacity estimation 
+
+21 rpm 
+50 bytes 
+17kbps 
+Read : write 4:1 
+7TB data for 5 years 
+
+
+
+
+POST bookings ->booking 
+{
+	Source , destination , user id , vehicle_type
+}
+Get bookings?time=past
+
+→ bookings 
+
+POST payments/{transaction_id}
+{
+
+}
+
+POST bookings/{booking_id}/accept
+{
+User_id,
+}
+
+GET requests?location
+
+{
+}
+
+GET driver?geohash_id
+[]
+
+POST rides/broadcast
+{
+ride _id 
+drivers=[]
+}
+
+
+DB 
+
+User 
+{
+Id,
+Name , 
+Number , 
+Email ,
+}
+Ride
+{
+Id,
+Requester_id,
+Source_id,
+Destination_id,
+vehicle_id
+}
+Vehicle
+{
+Id,
+NAME,
+}
+Bookings
+{
+Id,
+Ride_id
+,driver_id,
+status
+}
+
+
+![image](https://user-images.githubusercontent.com/41165330/214552059-0a1d5752-28ed-47de-88dc-c72752ae8087.png)
+
 
 ------------------------------------------------------------------------------------------------------------------------------------  
 #insights After seeing solutions:
