@@ -186,6 +186,13 @@ Or even better - you can also say that there is no subject which I would put in 
 Be prepared to explain each and everything in thorough detail.
 Try to structure your answer like this
 
+18 . How do you give constructive feedback to your peers.
+A. I have a very open relationship with my peers, and if I feel that the task that they are working on or the code that they have written is not up to the mark, I always discuss the same with them. I usually do this by giving them suggestions like maybe you can try doing this task in this way, or sharing links with them which might help them in understanding how they could have done their current task in a better way.
+
+If they are not performing well, then I like to have a frank discussion with them regarding if they are going through some problems which are hindering their performance? If there's any way in which I can help them, then I try to do the same. Like sometimes someone isn't performing well because they are not enjoying the task at hand, at that time it becomes a pointer for me that maybe those kinds of tasks need to be distributed to other members of the team who might enjoy that type of task more.
+
+I am not sure if my answer is right or now, but that's what I usually practice at work, and shared the same with the interviewer. Let me know what you guys think.
+
 Motive - what inspired you to take up this project? Justify with some real world application - max 2-3 sentences
 Initial exploration - what all did you read up about it - max 2-3 sentences
 Implementation details - preferably a flow/block diagram (if possible), and 5-6 sentence summary explanation
