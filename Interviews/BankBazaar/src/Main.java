@@ -1,67 +1,24 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println(maxPalindrome("123",3));
-
+        int[] arr={3,1,4,2,5};
+       sortMinMoves(arr);
     }
-    public static String maxPalindrome(String s,int c)
-    {
-        int l=0,r=s.length()-1;
-        char ans[]=new char[s.length()];
-        while(l<=r)
-        {
-            if(s.charAt(l)==s.charAt(r))
-            {
-                ans[l]=s.charAt(l);
-                ans[r]=s.charAt((r));
-            }
-            else
-            {
-                if(s.charAt(l)>s.charAt(r))
-                {
-                    ans[l]=s.charAt(l);
-                    ans[r]=s.charAt(l);
+    public static void sortMinMoves(int[] arr) {
+        for (int i = arr.length - 1; i > 0; i--) {
+            for (int j = 0; j < arr.length; j++) {
+                int ele1 = -1, ele2 = -1;
+                if (arr[j] == i) {
+                    ele1 = j;
                 }
-                else
-                {
-                    ans[l]=s.charAt(r);
-                    ans[r]=s.charAt(r);
+                if (arr[j] == (int)(i+1)) {
+                    ele2 = j;
                 }
-                c--;
+                System.out.println("1st "+i+" 2nd "+(int)(i+1));
+                if (ele1!=-1&&ele2!=-1&& ele1> ele2) {
+                    System.out.println("move " + i + " to top");
+                }
             }
-            l++;
-            r--;
         }
-        l=0;
-        r=s.length()-1;
-        while(l<=r)
-        {
-            if(s.charAt(l)==s.charAt(r)&&ans[l]!='9')
-            {
-                if(c>=2)
-                {
-                    ans[l] = '9';
-                    ans[r] = '9';
-                    c=c-2;
-                }
-                if(l==r&&c>=1)
-                {
-                    ans[l]='9';
-                }
-            }
-            else
-            {
-                if(c>=1&&ans[l]!='9')
-                {
-                    ans[l]='9';
-                    ans[r]='9';
-                    c--;
-                }
-            }
-            l++;
-            r--;
-        }
-        System.out.println("c left = "+c);
-        return new String(ans);
     }
 }
 
