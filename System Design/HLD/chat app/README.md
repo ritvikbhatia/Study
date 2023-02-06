@@ -1,10 +1,116 @@
-HLD (High Level Design)
+# Chat App
 
-Important Links
+requirements
 
-Top 14 System Design interview questions for software engineers
+Chat ,
+Group chat 
+One to one 
 
-https://www.educative.io/blog/top-10-system-design-interview-questions#proximity
+thread( 1 level nested)
 
-Everything about system design
-https://github.com/karanpratapsingh/system-design
+
+DB design
+
+User
+{
+Id
+Name
+Email 
+Hash
+Profile_pic
+}
+
+Threads
+{
+Id
+Creator_id
+Text
+Media
+timestamp
+}
+
+Comments
+{
+Id
+Text
+Commenter_id
+Thread_id
+Media
+timestamp
+}
+
+Groups
+{
+Id
+Name
+picture_url
+}
+
+
+
+
+Group_user_mapping
+{
+id
+Group_id
+member_id
+}
+
+Group_message_mapping
+{
+Id
+Group_id
+Sender_id
+Message
+time_stamp
+}
+
+
+
+API design
+
+
+
+POST /threads/
+{
+Text
+media
+}
+
+PUT thread/{thread_id}
+{
+text
+}
+
+DELETE threads/{thread_id}
+
+
+GET posts?timestamp
+
+GET post/{id}
+
+POST /threads/{thread_id}/comments
+{
+Text,
+Media
+}
+
+PUT ,DELETE
+GET threads/{thread_id}/comments
+
+POST groups
+{
+name,pic
+}
+
+POST groups/{group_id}/members
+{
+members=[]
+}
+
+POST groups/{group_id}/message?type=single
+{
+text
+}
+
+
